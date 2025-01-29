@@ -22,6 +22,7 @@
   gap: 24px;
   height: 44px;
   font-size: 12px;
+  background: #f5f5f7cc;
 }
 
 .navigating-images:last-child {
@@ -29,7 +30,6 @@
 }
 
 .donation {
-  background-color: rebeccapurple;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -66,9 +66,22 @@
 }
 
 .main {
-  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(3, 692px);
+  grid-template-columns: repeat(1, 100vw);
+  gap: 12px;
 }
-.iphone16pro-intro {
+.product1 {
+  grid-row: 1 / 2;
+}
+.product2 {
+  grid-row: 2 / 3;
+}
+.product3 {
+  grid-row: 3;
+}
+
+.products {
   width: 100%;
   height: 692px;
   color: white;
@@ -77,23 +90,74 @@
   font-family: "inter";
 }
 .iphone16pro-bgimage {
-  background-image: url(./BG-images/Background.png);
-  background-size: cover;
+  background-image: var(--iphone16pro) center/cover no-repeat;
+}
+.iphone16-bgimage {
+  background-image: var(--iphone16) center/cover no-repeat;
+}
+.gift-magic {
+  background-image: var(--gift-magic) center/cover no-repeat;
+}
+
+.main-bgimg {
+  /* background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; */
   width: 100%;
   height: 692px;
   position: absolute;
-  background-size: contain;
   z-index: -1;
 }
-
-.iphone16pro-intro div:nth-child(2) {
+.product-introduction {
   text-align: center;
+  width: 405px;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 55px;
 }
-.iphone16pro-intro div:nth-child(2) div:first-child {
+
+.product-title {
+  width: 405px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product-title > div:first-child {
   font-size: 52px;
   font-weight: 600;
 }
-.iphone16pro-intro div:nth-child(2) {
-  text-align: center;
+.product-title > div:last-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.product-options {
+  width: 207px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.product-options div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0071e3;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+}
+
+.product-options > div:first-child {
+  background-color: #0071e3;
+}
+.product-options > div:last-child {
+  color: #0071e3;
 }
