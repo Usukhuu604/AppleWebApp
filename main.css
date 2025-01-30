@@ -1,10 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "inter";
 }
 .header {
-  font-family: "inter";
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -68,14 +68,14 @@
 .main {
   display: grid;
   grid-template-rows: repeat(3, 692px);
-  grid-template-columns: repeat(1, 100vw);
+  grid-template-columns: repeat(1, 1fr);
   gap: 12px;
 }
 .product1 {
-  grid-row: 1 / 2;
+  grid-row: 1;
 }
 .product2 {
-  grid-row: 2 / 3;
+  grid-row: 2;
 }
 .product3 {
   grid-row: 3;
@@ -87,27 +87,29 @@
   color: white;
   display: flex;
   justify-content: center;
-  font-family: "inter";
 }
+
 .iphone16pro-bgimage {
-  background-image: var(--iphone16pro) center/cover no-repeat;
+  background-image: url(./BG-images/Background.png);
 }
 .iphone16-bgimage {
-  background-image: var(--iphone16) center/cover no-repeat;
+  background-image: url(./BG-images/Background-1.png);
 }
 .gift-magic {
-  background-image: var(--gift-magic) center/cover no-repeat;
+  background-image: url(./BG-images/Figure.png);
 }
 
 .main-bgimg {
-  /* background-size: cover;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   width: 100%;
   height: 692px;
-  position: absolute;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
+/*  */
+
 .product-introduction {
   text-align: center;
   width: 405px;
@@ -125,6 +127,7 @@
   height: 108px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 .product-title > div:first-child {
@@ -137,7 +140,7 @@
 }
 
 .product-options {
-  width: 207px;
+  width: 250px;
   height: 44px;
   display: flex;
   flex-direction: row;
@@ -157,7 +160,105 @@
 
 .product-options > div:first-child {
   background-color: #0071e3;
+  width: max-content;
 }
 .product-options > div:last-child {
   color: #0071e3;
+}
+
+.gift-magic .product-introduction {
+  margin-top: 445px;
+}
+
+.grid-images {
+  margin: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 580px);
+  gap: 12px;
+}
+
+.grid-img {
+  background-color: #0071e3;
+  background: center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.top-left-img {
+  background-image: url(./BG-images/Figure-1.png);
+}
+.top-right-img {
+  background-image: url(./BG-images/Figure-2.png);
+}
+.mid-left-img {
+  background-image: url(./BG-images/Figure-3.png);
+}
+.mid-right-img {
+  background-image: url(./BG-images/Figure-4.png);
+}
+.bottom-left-img {
+  background-image: url(./BG-images/Figure-5.png);
+}
+.bottom-right-img {
+  background-image: url(./BG-images/Figure-6.png);
+}
+.iPadAir-bgimg {
+  width: 430px;
+  height: 33px;
+  background-image: url(./images-logo/Heading\ 3.png);
+}
+
+.grid-img .product-introduction {
+  margin-top: 58px;
+  gap: 0px;
+  height: 100px;
+}
+.grid-img .product-introduction .product-options {
+  margin-top: 20px;
+}
+
+.grid-img .product-introduction .product-options div:first-child {
+  color: white;
+}
+
+#gradient1 {
+  background: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  background-clip: text;
+  color: transparent;
+  height: max-content;
+  width: max-content;
+  margin-bottom: 53px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.appleWatch {
+  width: 152px;
+  height: 61px;
+  background-image: url(./images-logo/Frame\ 4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.mid-left-img .product-title {
+  gap: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: none;
+  }
 }
