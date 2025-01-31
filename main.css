@@ -24,11 +24,9 @@
   font-size: 12px;
   background: #f5f5f7cc;
 }
-
 .navigating-images:last-child {
   display: none;
 }
-
 .donation {
   height: 44px;
   font-size: 14px;
@@ -37,39 +35,19 @@
   height: min-content;
 }
 
-@media only screen and (max-width: 768px) {
-  .navigation {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0px;
-  }
-  .navigating-images {
-    width: 48px;
-    height: 48px;
-  }
-  .navigating-images:last-child {
-    display: block;
-  }
-  .navigating-images:first-child {
-    position: absolute;
-    left: 0px;
-  }
-  .navigation a:not(.navigating-images) {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .donation {
-    height: max-content;
-  }
-}
-
 .main {
   display: grid;
   grid-template-rows: repeat(3, 692px);
   grid-template-columns: repeat(1, 1fr);
   gap: 12px;
+  height: 100%;
+}
+.products {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 .product1 {
   grid-row: 1;
@@ -80,15 +58,6 @@
 .product3 {
   grid-row: 3;
 }
-
-.products {
-  width: 100%;
-  height: 692px;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
 .iphone16pro-bgimage {
   background-image: url(./BG-images/Background.png);
 }
@@ -108,7 +77,6 @@
   display: flex;
   justify-content: center;
 }
-/*  */
 
 .product-introduction {
   text-align: center;
@@ -123,7 +91,7 @@
 }
 
 .product-title {
-  width: 405px;
+  width: 100%;
   height: 108px;
   display: flex;
   flex-direction: column;
@@ -147,7 +115,6 @@
   gap: 16px;
   justify-content: center;
 }
-
 .product-options div {
   display: flex;
   align-items: center;
@@ -157,7 +124,6 @@
   font-weight: 400;
   padding: 12px 20px;
 }
-
 .product-options > div:first-child {
   background-color: #0071e3;
   width: max-content;
@@ -167,11 +133,13 @@
 }
 
 .gift-magic .product-introduction {
-  margin-top: 445px;
+  margin-top: auto;
+  margin-bottom: 82px;
 }
 
-.grid-images {
-  margin: 12px;
+.section {
+  margin: 12px 0px;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 580px);
@@ -179,36 +147,48 @@
 }
 
 .grid-img {
-  background-color: #0071e3;
+  width: 100%;
   background: center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  flex-wrap: wrap;
 }
 
 .top-left-img {
   background-image: url(./BG-images/Figure-1.png);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 .top-right-img {
   background-image: url(./BG-images/Figure-2.png);
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 .mid-left-img {
   background-image: url(./BG-images/Figure-3.png);
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 .mid-right-img {
   background-image: url(./BG-images/Figure-4.png);
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 .bottom-left-img {
   background-image: url(./BG-images/Figure-5.png);
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
 }
 .bottom-right-img {
   background-image: url(./BG-images/Figure-6.png);
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
+
 .iPadAir-bgimg {
-  width: 430px;
+  width: 100%;
   height: 33px;
   background-image: url(./images-logo/Heading\ 3.png);
 }
@@ -242,7 +222,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-
+/* 
 .appleWatch {
   width: 152px;
   height: 61px;
@@ -255,10 +235,98 @@
 
 .mid-left-img .product-title {
   gap: 4px;
-}
+} */
 
 @media only screen and (max-width: 768px) {
-  .main {
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px;
+  }
+  .navigating-images {
+    width: 48px;
+    height: 48px;
+  }
+  .navigating-images:last-child {
+    display: block;
+  }
+  .navigating-images:first-child {
+    position: absolute;
+    left: 0px;
+  }
+  .navigation a:not(.navigating-images) {
     display: none;
+  }
+  .main-bgimg:not(.gift-magic) {
+    background-size: 1000px 100%;
+  }
+  .section {
+    width: 100%;
+    grid-template-rows: repeat(3, 500px);
+  }
+  .grid-img {
+    width: 100%;
+  }
+  .grid-img .product-introduction {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .donation {
+    height: max-content;
+  }
+  .main-bgimg {
+    background-size: 390px 100%;
+    height: 500px;
+    background-position: center;
+  }
+  .main {
+    grid-template-rows: repeat(3, 500px);
+  }
+  .product-introduction {
+    width: 100%;
+    height: 114px;
+  }
+  .iphone16pro-bgimage .product-introduction {
+    margin-top: auto;
+    margin-bottom: 36px;
+  }
+  .iphone16pro-bgimage {
+    background-image: url(./mobile-images/192318499aff8aebb56aaf232c8f00d4.jpeg);
+  }
+  .iphone16-bgimage {
+    background-image: url(./mobile-images/Figure-9.png);
+  }
+  .gift-magic {
+    background-position: center;
+    background-size: auto 100%;
+  }
+  .gift-magic .product-introduction {
+    margin-bottom: 15%;
+    margin-top: auto;
+  }
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 500px);
+  }
+
+  .top-left-img {
+    grid-row: 1 / 2;
+  }
+  .top-right-img {
+    grid-row: 2 / 3;
+  }
+  .mid-left-img {
+    grid-row: 3 / 4;
+  }
+  .mid-right-img {
+    grid-row: 4 / 5;
+  }
+  .bottom-left-img {
+    grid-row: 5 / 6;
+  }
+  ß .bottom-right-img {
+    grid-row: 6 / 7;
   }
 }
