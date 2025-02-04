@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "inter";
+}
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.header * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.navigation a {
+  text-decoration: none;
+}
+.navigation {
+  gap: 24px;
+  height: 44px;
+  font-size: 12px;
+  background: #f5f5f7cc;
+}
+
+.promotion {
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  padding: 16px 10px;
+  height: min-content;
+}
+
+.gradient-shadow {
+  width: 100vw;
+  height: 75px;
+
+  background: linear-gradient(to right, cyan, blue, red, orange);
+}
+
+.gift-magic-this-holiday {
+  margin: 80px 0px;
+  width: auto;
+  height: 100px;
+  padding: 0px 140px;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.gift-magic-this-holiday div:first-child {
+  width: max-content;
+  margin-bottom: auto;
+}
+
+.gift-magic-this-holiday div:first-child h1 {
+  color: #6e6e73;
+  font-size: 44px;
+  font-weight: 700;
+}
+.gift-magic-this-holiday div:first-child h1 span {
+  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.gift-magic-this-holiday div:last-child {
+  width: 226px;
+  height: 100%;
+  background-color: rgb(214, 12, 12);
+}
+.need-shoping-help {
+  display: grid;
+  /* grid-template-columns:; */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+.products-list {
+  width: 100;
+  height: 136px;
+  padding: 0px 140px;
+  justify-content: space-between;
+}
+.items {
+  width: 136px;
+  height: 100%;
+  background-color: blue;
+}
+
+.main {
+  margin: 60px 0px;
+  padding-left: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main div {
+  height: 560px;
+  width: 100%;
+  border: 1px solid orangered;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+.main div div {
+  background-color: blueviolet;
+  height: 500px;
+}
+
+.main div h2 span {
+  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main div h2 {
+  color: #6e6e73;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  margin: 0px 0px 100px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer div {
+  display: flex;
+  gap: 12px;
+}
+.footer div div {
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 40px;
+  align-items: center;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+.footer div div span {
+  width: 8px;
+  height: 8px;
+  background: url(.//images-logo/Vector\(2\).png) center/cover no-repeat;
+}
