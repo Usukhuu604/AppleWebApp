@@ -2,7 +2,11 @@
   margin: 0px;
   padding: 0px;
   font-family: "inter";
+  background: #f5f5f7cc;
 }
+/* body {
+  overflow-x: hidden;
+} */
 .header {
   width: 100vw;
   display: flex;
@@ -15,6 +19,7 @@
   align-items: center;
   color: black;
 }
+
 .navigation a {
   text-decoration: none;
 }
@@ -31,6 +36,7 @@
   text-align: center;
   padding: 16px 10px;
   height: min-content;
+  background-color: white;
 }
 
 .gradient-shadow {
@@ -57,6 +63,7 @@
   color: #6e6e73;
   font-size: 44px;
   font-weight: 700;
+  background-color: #f5f5f7cc;
 }
 .gift-magic-this-holiday div:first-child h1 span {
   background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
@@ -175,7 +182,6 @@
 .main > div {
   height: 560px;
   width: 100%;
-  border: 1px solid orangered;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -186,29 +192,22 @@
   display: flex;
   align-items: center;
   scrollbar-width: none;
-}
-.section div {
-  border: 1px solid black;
-  border-radius: 20px;
-}
-.main-section01 {
-  gap: 20px;
   overflow-x: scroll;
-}
-.main-section02 {
-  overflow: scroll;
   gap: 20px;
 }
-.main-section03 {
-  overflow: scroll;
-  gap: 20px;
+.section > div {
+  border-radius: 20px;
+  background-color: #0090f7;
 }
+
 .main-section01 div {
   display: flex;
+  flex-direction: column;
   width: 500px;
   height: 480px;
   flex-shrink: 0;
-  background-color: #0090f7;
+  padding: 30px 0 0 30px;
+  gap: 9px;
 }
 
 .main-section02 > div {
@@ -223,16 +222,11 @@
 .main-section03 > div {
   flex-shrink: 0;
   height: 500px;
-  width: 310px;
+  width: 313px;
 }
 
 .main-section03 div:first-child {
   width: 400px;
-}
-
-.main-section04 {
-  gap: 20px;
-  overflow: scroll;
 }
 
 .main-section04 > div {
@@ -241,16 +235,27 @@
   flex-shrink: 0;
 }
 
-.main-section04 div:nth-child(2) {
+.main-section04 > div:nth-child(2) {
   display: grid;
+  gap: 20px;
   width: 640px;
   height: 500px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
+.main-section05 > div {
+  width: 480px;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.main-section06 > div {
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+}
 .main-div {
-  border: 1px solid #0090f7;
   height: 500px;
 }
 
@@ -293,3 +298,104 @@
   height: 8px;
   background: url(.//images-logo/Vector\(2\).png) center/cover no-repeat;
 }
+
+.main-section01 > div > p:first-child {
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: transparent;
+}
+.main-section01 > div > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: transparent;
+}
+.main-section01 > div > p:last-child {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+}
+.main-section01 div:first-child {
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-ipad-mini-202411.png)
+    center/cover no-repeat;
+}
+.main-section01 div:nth-child(2) {
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-watch-s10-202411.png)
+    center/cover no-repeat;
+}
+.main-section01 div:nth-child(3) {
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-iphone-pro-202411_GEO_US.png)
+    center/cover no-repeat;
+}
+.main-section01 div:nth-child(4) {
+  background: url(https://s3-alpha-sig.figma.com/img/8943/d8c5/85c4f4bb4720641745b1cce65bdd8f0e?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VqKamVkKrNGMQTZlkBluw~pO6kbSfCvlxJanKZnRtgzYCuHV3xnLvOCKRO-HGKcN~FSY2m8G~mn2hL2EzYUrqPW2VF3zm-8mBB7qIdaXNJrspjoijOLcu5qa9vUK5yoqLHoATq9BVTIx8ori2PYkU05YM2LvWG8qYIJuSllUjkcWbh1PoANvLfJMbi9zmIiIHkFFKrTYrIABXaBQPPiuG6YKKEI3q6vXyc0I3tzn~dbbKKtAP~LeD5BnFSM8eo54~Fs83oEpB-GRsop--driV8PfCtylXqLA1z1AtlmhJ7PTbjzNXmi0YTgmjqbme-OxT1uyxukSXwB9dl8-3WJxrA__)
+    center/cover no-repeat;
+}
+
+.main-section02 div {
+  background-color: white;
+}
+.main-section02 #zzz > h3 {
+  font-size: 26px;
+  font-weight: 700;
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  position: relative;
+  top: 53px;
+  left: 30px;
+}
+.main-section02 > #zzz {
+  background: url(./store-imgs/mainclass-imgs/store-card-40-holiday-engraving-202411.png)
+    center/cover no-repeat;
+}
+.main-section02 > div:not(#zzz) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-section02 > div:not(#zzz) > div:first-child {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  top: 71px;
+}
+.main-section02 > div:not(#zzz) > div:last-child {
+  width: 258px;
+  border: 1px solid #050505;
+  margin-bottom: 30px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+}
+.main-section02 > div:not(#zzz) > div:last-child > p:last-child {
+  color: #1d1d1f;
+  font-size: 14px;
+  margin-top: auto;
+}
+.main-section02 > div:not(#zzz) > div:last-child > h5 {
+  /* color: #1d1d1f; */
+  font-size: 18px;
+  font-weight: 700;
+  color: #f2416b;
+}
+.main-section02 > div:nth-child(2) > div:first-child {
+  background: url(./store-imgs/mainclass-imgs/MX2D3.png) center/cover no-repeat;
+}
+.main-section02 > div:nth-child(3) > div:first-child {
+  background: url(./store-imgs/mainclass-imgs/airpods-pro-2-hero-select-202409.png)
+    center/cover no-repeat;
+}
+.main-section02 > div:nth-child(4) > div:first-child {
+  background: url(./store-imgs/mainclass-imgs/airpods-max-select-202409-purple.png)
+    center/cover no-repeat;
+}
+.main-section02 > div:nth-child(5) > div:first-child {
+  background: url(./store-imgs/mainclass-imgs/airpods-4-anc-select-202409.png)
+    center/cover no-repeat;
+}
+/* .main-section02 > div:nth-child(2) {
+  background: url(./store-imgs/mainclass-imgs/) center/cover no-repeat;
+} */
