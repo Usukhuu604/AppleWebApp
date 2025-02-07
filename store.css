@@ -4,9 +4,9 @@
   font-family: "inter";
   background: #f5f5f7cc;
 }
-/* body {
+body {
   overflow-x: hidden;
-} */
+}
 .header {
   width: 100vw;
   display: flex;
@@ -335,6 +335,10 @@
 .main-section02 div {
   background-color: white;
 }
+
+.main-section02 * {
+  background-color: white;
+}
 .main-section02 #zzz > h3 {
   font-size: 26px;
   font-weight: 700;
@@ -356,7 +360,7 @@
   align-items: center;
 }
 
-.main-section02 > div:not(#zzz) > div:first-child {
+.main-section02 > div:not(:first-child) > div:first-child {
   width: 230px;
   height: 230px;
   position: relative;
@@ -364,7 +368,6 @@
 }
 .main-section02 > div:not(#zzz) > div:last-child {
   width: 258px;
-  border: 1px solid #050505;
   margin-bottom: 30px;
   height: 110px;
   display: flex;
@@ -376,7 +379,6 @@
   margin-top: auto;
 }
 .main-section02 > div:not(#zzz) > div:last-child > h5 {
-  /* color: #1d1d1f; */
   font-size: 18px;
   font-weight: 700;
   color: #f2416b;
@@ -396,6 +398,3 @@
   background: url(./store-imgs/mainclass-imgs/airpods-4-anc-select-202409.png)
     center/cover no-repeat;
 }
-/* .main-section02 > div:nth-child(2) {
-  background: url(./store-imgs/mainclass-imgs/) center/cover no-repeat;
-} */
