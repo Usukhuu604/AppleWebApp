@@ -243,6 +243,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+.main-section04 > div:nth-child(2) > div {
+  border-radius: 20px;
+}
 
 .main-section05 > div {
   width: 480px;
@@ -396,5 +399,34 @@ body {
 }
 .main-section02 > div:nth-child(5) > div:first-child {
   background: url(./store-imgs/mainclass-imgs/airpods-4-anc-select-202409.png)
+    center/cover no-repeat;
+}
+
+.main-section04 > div:nth-child(1) {
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-delivery-pickup-202411.png)
+    center/cover no-repeat;
+}
+.main-section04 > div:nth-child(3) {
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-trade-in-202411.png)
+    center/cover no-repeat;
+}
+.main-section04 > div:nth-child(4) {
+  background: url(./store-imgs/mainclass-imgs/cd1a574c53bacf2396a17f1007bfc091.jpeg)
+    center/cover no-repeat;
+}
+.main-section05 > div:nth-child(1) {
+  background: url(./store-imgs/mainclass-imgs/Listitem.png) center/cover
+    no-repeat;
+}
+.main-section05 > div:nth-child(2) {
+  background: url(./store-imgs/mainclass-imgs/Listitem\(1\).png) center/cover
+    no-repeat;
+}
+.main-section05 > div:nth-child(3) {
+  background: url(./store-imgs/mainclass-imgs/Listitem\(2\).png) center/cover
+    no-repeat;
+}
+.main-section05 > div:nth-child(4) {
+  background: url(./store-imgs/mainclass-imgs/459dcec6247af385b50ac485e92e5a45.jpeg)
     center/cover no-repeat;
 }
