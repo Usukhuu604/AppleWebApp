@@ -3,10 +3,9 @@
   padding: 0px;
   font-family: "inter";
   background: #f5f5f7cc;
+  cursor: default;
 }
-body {
-  overflow-x: hidden;
-}
+
 .header {
   width: 100vw;
   display: flex;
@@ -22,6 +21,7 @@ body {
 
 .navigation a {
   text-decoration: none;
+  cursor: pointer;
 }
 .navigation {
   gap: 24px;
@@ -86,8 +86,7 @@ body {
   grid-row: 1 / 3;
   width: 100%;
   height: 50%;
-  background: url(./store-imgs/store-chat-holiday-specialist-icon-202411_AV3.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/store-chat-holiday-specialist-icon-202411_AV3.png) center/cover no-repeat;
   border: #6e6e73;
   border-radius: 50%;
 }
@@ -127,48 +126,38 @@ body {
   height: 100%;
 }
 .item-img01 {
-  background: url(./store-imgs/sotre-products/store-card-13-mac-nav-202410.png)
-    no-repeat center/cover;
+  background: url(./store-imgs/sotre-products/store-card-13-mac-nav-202410.png) no-repeat center/cover;
 }
 .item-img02 {
-  background: url(./store-imgs/sotre-products/store-card-13-iphone-nav-202409_GEO_US.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-iphone-nav-202409_GEO_US.png) center/cover no-repeat;
 }
 .item-img03 {
-  background: url(./store-imgs/sotre-products/store-card-13-ipad-nav-202405.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-ipad-nav-202405.png) center/cover no-repeat;
 }
 .item-img04 {
-  background: url(./store-imgs/sotre-products/store-card-13-watch-nav-202409.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-watch-nav-202409.png) center/cover no-repeat;
 }
 .item-img05 {
-  background: url(./store-imgs/sotre-products/store-card-13-vision-pro-nav-202401.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-vision-pro-nav-202401.png) center/cover no-repeat;
 }
 .item-img06 {
-  background: url(./store-imgs/sotre-products/store-card-13-airpods-nav-202409.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-airpods-nav-202409.png) center/cover no-repeat;
 }
 .item-img07 {
-  background: url(./store-imgs/sotre-products/store-card-13-airtags-nav-202108.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-airtags-nav-202108.png) center/cover no-repeat;
 }
 .item-img08 {
-  background: url(./store-imgs/sotre-products/store-card-13-appletv-nav-202210.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-appletv-nav-202210.png) center/cover no-repeat;
 }
 .item-img09 {
-  background: url(./store-imgs/sotre-products/store-card-13-homepod-nav-202301.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-homepod-nav-202301.png) center/cover no-repeat;
 }
 .item-img10 {
-  background: url(./store-imgs/sotre-products/store-card-13-accessories-nav-202409.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-accessories-nav-202409.png) center/cover no-repeat;
 }
 .item-img11 {
-  background: url(./store-imgs/sotre-products/store-card-13-holiday-giftcards-asit-agc-nav-202111.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/sotre-products/store-card-13-holiday-giftcards-asit-agc-nav-202111.png) center/cover
+    no-repeat;
 }
 
 .main {
@@ -238,6 +227,7 @@ body {
 .main-section04 > div:nth-child(2) {
   display: grid;
   gap: 20px;
+
   width: 640px;
   height: 500px;
   grid-template-columns: repeat(2, 1fr);
@@ -275,7 +265,6 @@ body {
 }
 
 .footer {
-  width: 100%;
   height: 100px;
   margin: 0px 0px 100px 140px;
   display: flex;
@@ -319,16 +308,13 @@ body {
   background-color: transparent;
 }
 .main-section01 div:first-child {
-  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-ipad-mini-202411.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-ipad-mini-202411.png) center/cover no-repeat;
 }
 .main-section01 div:nth-child(2) {
-  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-watch-s10-202411.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-watch-s10-202411.png) center/cover no-repeat;
 }
 .main-section01 div:nth-child(3) {
-  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-iphone-pro-202411_GEO_US.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-iphone-pro-202411_GEO_US.png) center/cover no-repeat;
 }
 .main-section01 div:nth-child(4) {
   background: url(https://s3-alpha-sig.figma.com/img/8943/d8c5/85c4f4bb4720641745b1cce65bdd8f0e?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VqKamVkKrNGMQTZlkBluw~pO6kbSfCvlxJanKZnRtgzYCuHV3xnLvOCKRO-HGKcN~FSY2m8G~mn2hL2EzYUrqPW2VF3zm-8mBB7qIdaXNJrspjoijOLcu5qa9vUK5yoqLHoATq9BVTIx8ori2PYkU05YM2LvWG8qYIJuSllUjkcWbh1PoANvLfJMbi9zmIiIHkFFKrTYrIABXaBQPPiuG6YKKEI3q6vXyc0I3tzn~dbbKKtAP~LeD5BnFSM8eo54~Fs83oEpB-GRsop--driV8PfCtylXqLA1z1AtlmhJ7PTbjzNXmi0YTgmjqbme-OxT1uyxukSXwB9dl8-3WJxrA__)
@@ -353,8 +339,7 @@ body {
   left: 30px;
 }
 .main-section02 > #zzz {
-  background: url(./store-imgs/mainclass-imgs/store-card-40-holiday-engraving-202411.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-40-holiday-engraving-202411.png) center/cover no-repeat;
 }
 .main-section02 > div:not(#zzz) {
   display: flex;
@@ -390,43 +375,33 @@ body {
   background: url(./store-imgs/mainclass-imgs/MX2D3.png) center/cover no-repeat;
 }
 .main-section02 > div:nth-child(3) > div:first-child {
-  background: url(./store-imgs/mainclass-imgs/airpods-pro-2-hero-select-202409.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/airpods-pro-2-hero-select-202409.png) center/cover no-repeat;
 }
 .main-section02 > div:nth-child(4) > div:first-child {
-  background: url(./store-imgs/mainclass-imgs/airpods-max-select-202409-purple.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/airpods-max-select-202409-purple.png) center/cover no-repeat;
 }
 .main-section02 > div:nth-child(5) > div:first-child {
-  background: url(./store-imgs/mainclass-imgs/airpods-4-anc-select-202409.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/airpods-4-anc-select-202409.png) center/cover no-repeat;
 }
 
 .main-section04 > div:nth-child(1) {
-  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-delivery-pickup-202411.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-delivery-pickup-202411.png) center/cover no-repeat;
 }
 .main-section04 > div:nth-child(3) {
-  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-trade-in-202411.png)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/store-card-50-holiday-trade-in-202411.png) center/cover no-repeat;
 }
 .main-section04 > div:nth-child(4) {
-  background: url(./store-imgs/mainclass-imgs/cd1a574c53bacf2396a17f1007bfc091.jpeg)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/cd1a574c53bacf2396a17f1007bfc091.jpeg) center/cover no-repeat;
 }
 .main-section05 > div:nth-child(1) {
-  background: url(./store-imgs/mainclass-imgs/Listitem.png) center/cover
-    no-repeat;
+  background: url(./store-imgs/mainclass-imgs/Listitem.png) center/cover no-repeat;
 }
 .main-section05 > div:nth-child(2) {
-  background: url(./store-imgs/mainclass-imgs/Listitem\(1\).png) center/cover
-    no-repeat;
+  background: url(./store-imgs/mainclass-imgs/Listitem\(1\).png) center/cover no-repeat;
 }
 .main-section05 > div:nth-child(3) {
-  background: url(./store-imgs/mainclass-imgs/Listitem\(2\).png) center/cover
-    no-repeat;
+  background: url(./store-imgs/mainclass-imgs/Listitem\(2\).png) center/cover no-repeat;
 }
 .main-section05 > div:nth-child(4) {
-  background: url(./store-imgs/mainclass-imgs/459dcec6247af385b50ac485e92e5a45.jpeg)
-    center/cover no-repeat;
+  background: url(./store-imgs/mainclass-imgs/459dcec6247af385b50ac485e92e5a45.jpeg) center/cover no-repeat;
 }

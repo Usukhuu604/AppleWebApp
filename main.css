@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "inter";
+  cursor: default;
 }
 .header {
   width: 100%;
@@ -17,6 +18,7 @@
 }
 .navigation a {
   text-decoration: none;
+  cursor: pointer;
 }
 .navigation {
   gap: 24px;
@@ -127,6 +129,7 @@
   font-size: 16px;
   font-weight: 400;
   padding: 12px 20px;
+  cursor: pointer;
 }
 .product-options > div:first-child {
   background-color: #0071e3;
@@ -211,13 +214,7 @@
 }
 
 #gradient1 {
-  background: linear-gradient(
-    90.43deg,
-    #0090f7 0%,
-    #ba62fc 33.33%,
-    #f2416b 66.67%,
-    #f55600 100%
-  );
+  background: linear-gradient(90.43deg, #0090f7 0%, #ba62fc 33.33%, #f2416b 66.67%, #f55600 100%);
   background-clip: text;
   color: transparent;
   height: max-content;
@@ -264,12 +261,13 @@
   overflow-x: auto;
   display: flex;
   gap: 16px;
+  scrollbar-width: none;
 }
 
 .scroll-bgimages {
   background-color: black;
   width: 1250px;
-  height: 668px;
+  height: 650px;
   flex-shrink: 0;
   align-items: center;
 }
@@ -306,15 +304,16 @@
   flex-shrink: 0;
 }
 
-.scroll-bgimages p {
-  background-color: red;
-}
 .scroll-bgimages p span {
   width: 133px;
   height: 44px;
   background-color: white;
   color: black;
   border-radius: 200px;
+  position: relative;
+  top: 500px;
+  left: 100px;
+  padding: 10px;
 }
 @media only screen and (max-width: 768px) {
   .navigation {
@@ -414,5 +413,75 @@
   }
   .bottom-right-img {
     grid-row: 6;
+  }
+}
+
+.scroll-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 0;
+}
+
+.bullet {
+  flex: 0 1 auto; /* allow shrink, no grow */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.bullet:hover,
+.bullet:focus {
+  background-color: #888;
+}
+
+.animation {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+}
+
+.animation-track {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 30s linear infinite;
+}
+
+.footerItems {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+.footer-item1 {
+  background-color: red;
+}
+.footer-item2 {
+  background-color: orange;
+}
+.footer-item3 {
+  background-color: green;
+}
+.footer-item4 {
+  background-color: purple;
+}
+.footer-item5 {
+  background-color: blue;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
