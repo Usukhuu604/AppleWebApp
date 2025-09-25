@@ -405,3 +405,95 @@
 .main-section05 > div:nth-child(4) {
   background: url(./store-imgs/mainclass-imgs/459dcec6247af385b50ac485e92e5a45.jpeg) center/cover no-repeat;
 }
+
+@media only screen and (max-width: 1024px) {
+  .gift-magic-this-holiday {
+    padding: 0px 40px;
+  }
+  .products-list {
+    padding: 0px 40px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .main {
+    padding-left: 40px;
+  }
+  .footer {
+    margin: 0px 0px 100px 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gift-magic-this-holiday {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+  .gift-magic-this-holiday div:first-child h1 {
+    font-size: 36px;
+  }
+  .need-shoping-help {
+    width: 100%;
+  }
+  .products-list {
+    gap: 20px;
+  }
+  .main {
+    padding-left: 20px;
+  }
+  .main div h2 {
+    font-size: 20px;
+  }
+  .footer {
+    margin: 0px 0px 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gift-magic-this-holiday {
+    padding: 0 20px;
+  }
+  .gift-magic-this-holiday div:first-child h1 {
+    font-size: 28px;
+  }
+  .products-list {
+    padding: 0 20px;
+  }
+  .main {
+    padding-left: 10px;
+  }
+  .main div h2 {
+    font-size: 18px;
+    width: 90%;
+  }
+  .main > div {
+    height: auto;
+  }
+  .section {
+    height: auto;
+  }
+  .main-section01 div,
+  .main-section02 > div,
+  .main-section03 > div,
+  .main-section04 > div,
+  .main-section05 > div,
+  .main-section06 > div {
+    width: 300px;
+    height: 400px;
+  }
+  .main-section02 div:first-child {
+    width: 300px;
+  }
+  .main-section04 > div:nth-child(2) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: auto;
+  }
+  .footer div {
+    flex-wrap: wrap;
+  }
+}
